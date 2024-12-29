@@ -7,11 +7,107 @@
 @layer base {
   /* "Device" container in Figma */
   .gfe-main {
-    @apply min-h-screen bg-gradient-main p-4;
+    @apply flex min-h-screen flex-col items-center bg-white px-6 py-28 md:px-8;
   }
 
   /* "Content" container in Figma */
   .gfe-gradient-container {
     @apply mx-auto flex w-full flex-col gap-16 rounded bg-white px-3 py-12 shadow-[0_1px_2px_rgba(0,0,0,0.05)] md:max-w-full md:rounded-md md:px-4 md:py-16 md:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] lg:p-24 lg:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)];
+  }
+
+  .gfe-container {
+    @apply mx-auto w-full border border-red-500 bg-white px-4 md:max-w-full md:px-8 lg:max-w-[1280px];
+  }
+
+  /** Button component 
+  * Sizes:
+  * - button-md
+  * - button-lg
+  * - button-xl
+  * - button-2xl
+  * Variants:
+  * - button-primary
+  * - button-secondary
+  * - button-tertiary
+  * - button-linkColor
+  * - button-linkGray
+  * - button-destructive
+  * States:
+  * - button-default
+  * - button-hover
+  * - button-focus
+  * - button-disabled
+  */
+
+  .button-md {
+    @apply gap-1 rounded px-[14px] py-[10px] text-sm;
+  }
+
+  .button-lg {
+    @apply gap-[6px] rounded px-4 py-[10px] text-base;
+  }
+
+  .button-xl {
+    @apply gap-[6px] rounded px-5 py-3 text-base;
+  }
+
+  .button-2xl {
+    @apply gap-[10px] rounded px-6 py-4 text-lg;
+  }
+
+  .button-md-linkColor {
+    @apply gap-1 rounded text-sm;
+  }
+
+  .button-lg-linkColor {
+    @apply gap-[6px] rounded text-base;
+  }
+
+  .button-xl-linkColor {
+    @apply gap-[6px] rounded text-base;
+  }
+
+  .button-2xl-linkColor {
+    @apply gap-[10px] rounded text-lg;
+  }
+
+  .button-md-linkGray {
+    @apply gap-1 rounded text-sm;
+  }
+
+  .button-lg-linkGray {
+    @apply gap-[6px] rounded text-base;
+  }
+
+  .button-xl-linkGray {
+    @apply gap-[6px] rounded text-base;
+  }
+
+  .button-2xl-linkGray {
+    @apply gap-[10px] rounded text-lg;
+  }
+
+  .button-primary {
+    @apply bg-indigo-700 text-white shadow-[0_1px_3px_rgba(0,0,0,0.10),0_1px_2px_rgba(0,0,0,0.06)];
+  }
+
+  .button-secondary {
+    @apply border-[0.5px] border-neutral-200 bg-white text-neutral-900 shadow-[0_1px_3px_rgba(0,0,0,0.10),0_1px_2px_rgba(0,0,0,0.06)];
+  }
+
+  .button-tertiary {
+    @apply bg-transparent text-indigo-700;
+  }
+
+  .button-linkColor {
+    @apply bg-transparent text-indigo-700;
+  }
+
+  .button-linkGray {
+    @apply bg-transparent text-neutral-600;
+  }
+
+  .button-destructive {
+    @apply bg-red-600 text-white;
   }
 }
