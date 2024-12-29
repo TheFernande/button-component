@@ -20,7 +20,6 @@ export default function Button({
   iconSize = 20,
   iconColor = "#4338CA"
 }: Readonly<IButtonProps>) {
-  console.log("Button -> withText", withText);
   return (
     <div className={"flex items-center font-medium" + " " + classNames}>
       {withIcon && iconPosition === "left" ? (
@@ -48,10 +47,3 @@ export default function Button({
     </div>
   );
 }
-
-/*
-- A button with a text
-- A button with an icon without text
-- A button with an icon to the left and a text
-- A button with a text and an icon to the right
-*/

@@ -19,26 +19,6 @@
     @apply mx-auto w-full border border-red-500 bg-white px-4 md:max-w-full md:px-8 lg:max-w-[1280px];
   }
 
-  /** Button component 
-  * Sizes:
-  * - button-md
-  * - button-lg
-  * - button-xl
-  * - button-2xl
-  * Variants:
-  * - button-primary
-  * - button-secondary
-  * - button-tertiary
-  * - button-linkColor
-  * - button-linkGray
-  * - button-destructive
-  * States:
-  * - button-default
-  * - button-hover
-  * - button-focus
-  * - button-disabled
-  */
-
   .button-md {
     @apply gap-1 rounded px-[14px] py-[10px] text-sm;
   }
