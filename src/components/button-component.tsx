@@ -1,4 +1,4 @@
-import IconStar from "./icons/Star";
+import IconStar from "./icons/icon-star";
 
 export interface IButtonProps {
   key: string;
