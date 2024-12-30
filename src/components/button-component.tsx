@@ -4,28 +4,31 @@ export interface IButtonProps {
   key: string;
   label: string;
   classNames: string;
+  isDisabled?: boolean;
   withText?: boolean;
   withIcon?: boolean;
   iconPosition?: "left" | "right";
   iconSize?: 20 | 24;
-  iconColor?: "#FFF" | "#525252" | "#000" | "#4338CA";
 }
 
 export default function Button({
   label,
   classNames,
+  isDisabled = false,
   withText = true,
   withIcon = false,
   iconPosition = undefined,
-  iconSize = 20,
-  iconColor = "#4338CA"
+  iconSize = 20
 }: Readonly<IButtonProps>) {
   return (
-    <div className={"flex items-center font-medium" + " " + classNames}>
+    <button
+      className={"flex items-center font-medium" + " " + classNames}
+      disabled={isDisabled}
+    >
       {withIcon && iconPosition === "left" ? (
         <IconStar
           size={iconSize}
-          color={iconColor}
+          isDisabled={isDisabled}
         />
       ) : null}
 
@@ -34,16 +37,16 @@ export default function Button({
       {withIcon && iconPosition === "right" ? (
         <IconStar
           size={iconSize}
-          color={iconColor}
+          isDisabled={isDisabled}
         />
       ) : null}
 
       {!withText && withIcon && iconPosition === undefined ? (
         <IconStar
           size={iconSize}
-          color={iconColor}
+          isDisabled={isDisabled}
         />
       ) : null}
-    </div>
+    </button>
   );
 }
