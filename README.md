@@ -74,3 +74,23 @@ git push --set-upstream origin main
 ```bash
 Cmd + Shift + P -> Reload Window
 ```
+
+## Tech stack and approach
+
+1. Core Architecture: 
+- TypeScript interfaces for prop type safety and autocompletion 
+- Modular component structure with default prop values 
+- Conditional icon rendering based on position/visibility props 
+- Responsive design using Tailwind breakpoints 
+
+2. Button Variants: 
+- 6 style variants: Primary, Secondary, Tertiary, Link (Color), Link (Gray), Destructive 
+- 4 size options: md, lg, xl, 2xl 
+- Icon support with left/right positioning 
+- Disabled state handling 
+
+3. Styling Implementation: 
+- Tailwind @layer base for component classes 
+- Shadow and state styling (hover, focus, disabled) 
+- Semantic color system using Tailwind color palette 
+- Clean variant management through separate data file
