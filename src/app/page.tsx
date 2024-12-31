@@ -15,7 +15,7 @@ export default function Home() {
     // `<main>` -> this is the "Page body" element in the Figma design
     <main className='gfe-main'>
       {/* Variant A */}
-      <div className='mobileGfe:max-w-[323px] flex max-w-full flex-wrap items-center justify-start gap-5 py-6 md:py-12'>
+      <div className='flex max-w-full flex-wrap items-center justify-start gap-5 pb-12 mobileGfe:max-w-[323px]'>
         {buttonVariantsA.map(button => (
           <Button
             key={button.key}
@@ -30,7 +30,7 @@ export default function Home() {
         ))}
       </div>
       {/* Variant B */}
-      <div className='mobileGfe:max-w-[323px] flex max-w-full flex-wrap items-center justify-start gap-5 py-6 md:py-12'>
+      <div className='flex max-w-full flex-wrap items-center justify-start gap-5 pb-12 mobileGfe:max-w-[323px]'>
         {buttonVariantsB.map(button => (
           <Button
             key={button.key}
@@ -45,7 +45,7 @@ export default function Home() {
         ))}
       </div>
       {/* Variant C */}
-      <div className='mobileGfe:max-w-[323px] flex max-w-full flex-wrap items-center justify-start gap-5 py-6 md:py-12'>
+      <div className='flex max-w-full flex-wrap items-center justify-start gap-5 pb-12 mobileGfe:max-w-[323px]'>
         {buttonVariantsC.map(button => (
           <Button
             key={button.key}
@@ -60,7 +60,7 @@ export default function Home() {
         ))}
       </div>
       {/* Variant D */}
-      <div className='mobileGfe:max-w-[323px] flex max-w-full flex-wrap items-center justify-start gap-5 py-6 md:py-12'>
+      <div className='flex max-w-full flex-wrap items-center justify-start gap-5 pb-12 mobileGfe:max-w-[323px]'>
         {buttonVariantsD.map(button => (
           <Button
             key={button.key}
@@ -75,7 +75,7 @@ export default function Home() {
         ))}
       </div>
       {/* Variant E */}
-      <div className='mobileGfe:max-w-[323px] flex max-w-full flex-wrap items-center justify-start gap-5 py-6 md:py-12'>
+      <div className='flex max-w-full flex-wrap items-center justify-start gap-5 pb-12 mobileGfe:max-w-[323px]'>
         {buttonVariantsE.map(button => (
           <Button
             key={button.key}
@@ -90,7 +90,7 @@ export default function Home() {
         ))}
       </div>
       {/* Variant F */}
-      <div className='mobileGfe:max-w-[323px] flex max-w-full flex-wrap items-center justify-start gap-5 py-6 md:py-12'>
+      <div className='flex max-w-full flex-wrap items-center justify-start gap-5 mobileGfe:max-w-[323px]'>
         {buttonVariantsF.map(button => (
           <Button
             key={button.key}
